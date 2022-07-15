@@ -1,16 +1,18 @@
 ul {
   list-style: none;
-  width: 400px;
+  width: 100%;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .wrapper {
   text-align: center;
   display: flex;
-  width: 400px;
+  width: 100%;
   background-color: #f2f2f2;
   align-items: center;
   justify-content: center;
-  margin: 50px auto 0;
+  margin: 20px auto 0;
   flex-direction: column;
 }
 

@@ -53,6 +53,9 @@ const TodoList = ({
                 inputProps={{ "aria-labelledby": labelId }}
                 onClick={handleToggle(todo, inx)}
                 onKeyPress={preventSubmit}
+                style={{
+                  marginLeft: "5px",
+                }}
               />
             </ListItemIcon>
             {!todo.isEditing ? (
@@ -68,7 +71,7 @@ const TodoList = ({
                 <ListItemIcon>
                   <IconButton
                     className="editButton"
-                    style={{ color: "#006600" }}
+                    style={{ color: "#006600", marginRight: "5px" }}
                     edge="end"
                     aria-label="edit"
                     onClick={() => editTodo(inx)}
@@ -109,7 +112,7 @@ const TodoList = ({
                 className="deleteButton"
                 onClick={() => deleteTodo(inx)}
                 edge="end"
-                style={{ color: "#cc0000" }}
+                style={{ color: "#cc0000", marginRight: "5px" }}
                 aria-label="delete"
               >
                 <DeleteIcon />
